@@ -1,0 +1,17 @@
+# Logs
+logs
+*.log
+
+# Dependencies
+node_modules/
+
+# Env files
+.env
+
+# Runtime data
+*.pid
+*.seed
+*.pid.lock
+
+# Build
+dist/
