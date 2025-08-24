@@ -7,45 +7,43 @@ Users can register, log in, attempt exams, and view results.
 
 ## 📌 Installation Guide
 
-<details>
-<summary> Step 1: Clone Repository </summary>
+### Step 1: Clone Repository </summary>
 
 Run the following:
-
+```bash
 git clone https://github.com/MadhalasaSJ/exam-portal.git
 cd exam-portal
+```
 
-</details>
-
----
-
-<details>
-<summary> Step 2: Setup Backend </summary>
+### Step 2: Setup Backend 
 
 1. **Move into backend:**
-   - cd exam-backend
-   - npm install
+   ```bash
+   cd exam-backend
+   npm install
+   ```
 
 
-2. **Create a `.env` file inside `exam-backend/`:**
-   - MONGO_URI=your-mongodb-uri
-   - JWT_SECRET=your-secret-key
-   - PORT=5000
+3. **Create a `.env` file inside `exam-backend/`:**
+   ```bash
+   MONGO_URI=your-mongodb-uri
+   JWT_SECRET=your-secret-key
+   PORT=5000
+   ```
 
 
 
-3. **Run backend:**
-    - node server.js
-
-
+5. **Run backend:**
+   ```bash
+   node server.js
+   ```
 
 👉 Backend will run at **http://localhost:5000**
-</details>
+
 
 ---
 
-<details>
-<summary> Step 3: Setup Frontend </summary>
+### Step 3: Setup Frontend 
 
 
 1. **Move into frontend:**
@@ -55,17 +53,17 @@ cd exam-portal
 
 
 👉 Frontend will run at **http://localhost:3000**
-</details>
+
 
 ---
 
 ## 📡 API Endpoints
 
-- **Authentication**
+#### **Authentication**
 - `POST /auth/register` → Register user  
 - `POST /auth/login` → Login & get token  
 
-- **Exam**
+#### **Exam**
 - `GET /exam/start` → Fetch random questions  
 - `POST /exam/submit` → Submit answers & get score  
 - `GET /exam/results` → Get user’s results  
