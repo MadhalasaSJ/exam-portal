@@ -47,9 +47,11 @@ cd exam-portal
 
 
 1. **Move into frontend:**
-    - cd ../exam-frontend
-    - npm install
-    - npm start
+   ```bash
+   cd ../exam-frontend
+   npm install
+   npm start
+   ```
 
 
 👉 Frontend will run at **http://localhost:3000**
